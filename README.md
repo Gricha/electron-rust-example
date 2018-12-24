@@ -12,13 +12,17 @@ It's not meant as a tool that does the job and more of a reference of how the th
 
 It can be useful for experimentation with Rust if you care about presentation layer being more matured than what Rust currently offers. This comes with a cost of having entire Electron app.
 
+## How to use it?
+
+You can check out the code in examples to see how the integration is done. You can copy over the code from there, but since underlying frameworks can change over time, I'd recommend following the steps below.
+
 ## Building Electron app with Rust dependencies
 
-Steps:
+These steps will set up an Electron app using electron-react-boilerplate. This means it will have React/Redux/Flow integrated in it.
 
-1. Start a project with all the boilerplate working for electron + webpack at least. I also wanted react for layout and so went with:
-https://github.com/electron-react-boilerplate/electron-react-boilerplate
-Follow install instructions from above. Probably looks like this:
+Rust module will be put in as separate dependency that can be pulled in by main app.
+
+1. Follow install instructions: https://github.com/electron-react-boilerplate/electron-react-boilerplate
 ```
 git clone --depth 1 --single-branch --branch master https://github.com/electron-react-boilerplate/electron-react-boilerplate.git my-electron-project
 cd my-electron-project
